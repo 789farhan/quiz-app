@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* background:black; */
+   
+}
+
+
+svg {
+  font-family: 'Monoton', cursive;
+  width: 100%; height: 100%;
+    margin-top:2%;
+}
+svg text {
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #FF71F9;
+  font-size: 100px;
+}
+
+
+@keyframes stroke {
+  0%   {
+    fill: rgba(27,174,255,0); stroke: rgba(255,113,249,1);
+    stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+  }
+  70%  {fill: rgba(27,174,255,0); stroke: rgba(255,113,249,1); }
+  80%  {fill: rgba(27,174,255,0); stroke: rgba(255,113,249,1); stroke-width: 3; }
+  100% {
+    fill: rgba(27,174,255,1); stroke: rgba(255,113,249,0);
+    stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+  }
+}
+
+::selection{
+    color: #fff;
+    background: rgba(27,174,255,1);
+}
+
+.Appbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
